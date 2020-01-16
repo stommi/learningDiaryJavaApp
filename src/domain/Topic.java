@@ -1,11 +1,10 @@
 package domain;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 public class Topic {
-    public static int seuraavaId;
-    private final int id;
-
+    private UUID id;
     private String title;
     private String description;
     private String additionalSource;
@@ -15,7 +14,7 @@ public class Topic {
 
     public Topic(String title) {
         this.title = title;
-        this.id = seuraavaId++;
+        this.id = UUID.randomUUID();
         this.creationDate = LocalDate.now();
     }
 
@@ -35,7 +34,7 @@ public class Topic {
         this.completionDate = completionDate;
     }
 
-    public int getId() {
+    public UUID getId() {
         return id;
     }
 

@@ -14,7 +14,7 @@ public class Main {
         Kirjoituskone kirjoituskone = new Kirjoituskone();
 
         while(true) {
-            System.out.print("Syöte opiskellun aiheen otsikko: ");
+            System.out.print("Syötä opiskellun aiheen otsikko: ");
             String aihe = lukija.nextLine();
             if (aihe.equals("")) {
                 break;
