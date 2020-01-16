@@ -70,6 +70,6 @@ public class Topic {
                 "\nMahdollinen lähde: " + this.additionalSource +
                 "\nOnko aiheen opiskelu kesken: " + this.complete +
                 "\nMilloin aihe on luotu: " + this.creationDate +
-                "\nMilloin aihe on opiskeltu: " + this.completionDate;
+                "\nMilloin aihe on opiskeltu: " + this.completionDate +"\n\n";
     }
 }
