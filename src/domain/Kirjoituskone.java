@@ -10,7 +10,7 @@ public class Kirjoituskone {
 
     public void kirjoita(Topic teksti) {
         try {
-            FileWriter kirjoittaja = new FileWriter("paivakirja.txt");
+            FileWriter kirjoittaja = new FileWriter("paivakirja.txt",true);
             kirjoittaja.write(String.valueOf(teksti));
             kirjoittaja.close();
         } catch (Exception e) {
