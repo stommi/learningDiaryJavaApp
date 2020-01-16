@@ -1,19 +1,18 @@
 package domain.ui;
 
-import domain.Aihelista;
 import domain.Kirjoituskone;
+import domain.Lista;
 import domain.Topic;
 
 import java.util.Scanner;
 
-
 public class Main {
     public static void main(String[] args) {
         Scanner lukija = new Scanner(System.in);
-        Aihelista aiheet = new Aihelista();
         Kirjoituskone kirjoituskone = new Kirjoituskone();
+        Lista kaikkiAiheet = new Lista();
 
-        while(true) {
+        while (true) {
             System.out.print("Syötä opiskellun aiheen otsikko: ");
             String aihe = lukija.nextLine();
             if (aihe.equals("")) {
@@ -34,12 +33,10 @@ public class Main {
             boolean tila = Boolean.valueOf(lukija.nextLine());
             t1.setComplete(tila);
 
-            aiheet.lisaaAihe(t1);
-
-            aiheet.tulostaAiheet();
-            System.out.println("");
             kirjoituskone.kirjoita(t1);
         }
+
+        kaikkiAiheet.tulostaAiheet();
 
     }
 }
