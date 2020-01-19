@@ -38,3 +38,11 @@ Onko aiheen opiskelu kesken: false
 Milloin aihe on luotu: 2020-01-19
 Milloin aihe on opiskeltu: null
 
+Id: 1673a526-0788-49a8-a886-4c46c246916d
+Otsikko: kayttoliittymat
+Kuvaus: ui testaus
+Mahdollinen lähde: web
+Onko aiheen opiskelu kesken: true
+Milloin aihe on luotu: 2020-01-19
+Milloin aihe on opiskeltu: null
+
