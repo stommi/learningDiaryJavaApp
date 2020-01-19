@@ -65,7 +65,8 @@ public class Topic {
     @Override
     public String toString() {
         return "Id: " + id +
-                "\nOtsikko: " + this.title + "\nKuvaus: " + this.description +
+                "\nOtsikko: " + this.title +
+                "\nKuvaus: " + this.description +
                 "\nMahdollinen lähde: " + this.additionalSource +
                 "\nOnko aiheen opiskelu kesken: " + this.complete +
                 "\nMilloin aihe on luotu: " + this.creationDate +
