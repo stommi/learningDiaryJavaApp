@@ -30,7 +30,7 @@ public class Main {
             t1.setAdditionalSource(lahde);
 
             System.out.print("Onko aiheen opiskelu kesken, syötä true tai false: ");
-            boolean tila = Boolean.valueOf(lukija.nextLine());
+            boolean tila = Boolean.parseBoolean(lukija.nextLine());
             t1.setComplete(tila);
 
             kirjoituskone.kirjoita(t1);
