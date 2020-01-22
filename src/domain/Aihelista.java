@@ -18,8 +18,10 @@ public class Aihelista {
     }
 
     public void tulostaAiheet() {
+        int i = 0;
         for (Topic aihe : aiheet) {
-            System.out.println(aihe.getTitle());
+            System.out.println(aihe.getTitle() + " (" + i + ")");
+            i++;
         }
     }
 
@@ -27,6 +29,10 @@ public class Aihelista {
         for (Topic aihe : aiheet) {
             System.out.println(aihe);
         }
+    }
+
+    public Topic getTopic(int indeksi) {
+        return aiheet.get(indeksi);
     }
 
     public void lisaaAihe(Topic aihe) {

@@ -16,7 +16,8 @@ public class Main {
     private static final String menuteksti = "\n Anna vaihtoehto:\n"
             + "1 Lisää uusi aihe\n"
             + "2 Tulosta aiheet\n"
-            + "3 Lopeta";
+            + "3 Hae yksittainen aihe\n"
+            + "4 Lopeta";
 
     public void run() {
         Scanner lukija = new Scanner(System.in);
@@ -29,6 +30,9 @@ public class Main {
                 aiheet.luoOliot();
                 aiheet.tulostaKaikkiAiheet();
             } else if ("3".equals(vastaus)) {
+                aiheet.luoOliot();
+                haeYksittainenAihe(lukija);
+            }else if ("4".equals(vastaus)) {
                 break;
             } else {
                 System.err.println(String.format("Tuntematon vaihtoehto: '%s'", vastaus));
@@ -60,6 +64,14 @@ public class Main {
         t1.setComplete(tila);
 
         kirjoituskone.kirjoita(t1);
+    }
+
+    private void haeYksittainenAihe(Scanner lukija) {
+        System.out.println("Alla on kaikkien aiheiden otsitkot, anna indeksi tarkastellaksesi aihetta: ");
+        aiheet.tulostaAiheet();
+        int indeksi = Integer.valueOf(lukija.nextLine());
+        System.out.println(aiheet.getTopic(indeksi));
+
     }
 
 }
