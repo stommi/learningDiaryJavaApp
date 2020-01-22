@@ -1,8 +1,10 @@
 package domain;
 
 import java.io.File;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.UUID;
 
 public class Lista {
     private ArrayList<String> aiheet;
@@ -14,7 +16,7 @@ public class Lista {
     public void tulostaAiheet() {
         String tiedosto = "paivakirja.txt";
 
-        try(Scanner tiedostonLukija = new Scanner(new File(tiedosto))) {
+        try (Scanner tiedostonLukija = new Scanner(new File(tiedosto))) {
             while (tiedostonLukija.hasNextLine()) {
                 aiheet.add(tiedostonLukija.nextLine());
             }
@@ -22,8 +24,11 @@ public class Lista {
             System.err.println("Tiedoston " + tiedosto + " lukeminen epäonnistui.");
         }
 
-        for (String rivi: aiheet) {
+        for (String rivi : aiheet) {
             System.out.println(rivi);
         }
     }
+
+
+
 }

@@ -12,7 +12,7 @@ Kuvaus: jatkokurssi
 Mahdollinen lähde: wiki
 Onko aiheen opiskelu kesken: false
 Milloin aihe on luotu: 2020-01-16
-Milloin aihe on opiskeltu: null
+Milloin aihe on opiskeltu: 2020-01-16
 
 Id: 226ce0b5-5a06-4f13-861f-5a411f2a3e5f
 Otsikko: JavaTestaus
@@ -20,7 +20,7 @@ Kuvaus: Jatkokurssi
 Mahdollinen lähde: book
 Onko aiheen opiskelu kesken: true
 Milloin aihe on luotu: 2020-01-16
-Milloin aihe on opiskeltu: null
+Milloin aihe on opiskeltu: 2020-01-16
 
 Id: 86ceb77f-8a0f-43a3-9b70-92a5327c9a2a
 Otsikko: String
@@ -28,7 +28,7 @@ Kuvaus: Metodit
 Mahdollinen lähde: pdf
 Onko aiheen opiskelu kesken: true
 Milloin aihe on luotu: 2020-01-19
-Milloin aihe on opiskeltu: null
+Milloin aihe on opiskeltu: 2020-01-16
 
 Id: a466eff5-afa6-483c-8496-f5f2477408e6
 Otsikko: Testi
@@ -36,7 +36,7 @@ Kuvaus: testausta
 Mahdollinen lähde: wiki
 Onko aiheen opiskelu kesken: false
 Milloin aihe on luotu: 2020-01-19
-Milloin aihe on opiskeltu: null
+Milloin aihe on opiskeltu: 2020-01-16
 
 Id: 1673a526-0788-49a8-a886-4c46c246916d
 Otsikko: kayttoliittymat
@@ -44,5 +44,13 @@ Kuvaus: ui testaus
 Mahdollinen lähde: web
 Onko aiheen opiskelu kesken: true
 Milloin aihe on luotu: 2020-01-19
+Milloin aihe on opiskeltu: null
+
+Id: 74f52a9e-8be4-4ba2-ad0a-f01a3296d5e7
+Otsikko: HTML
+Kuvaus: Webbisivut
+Mahdollinen lähde: kirja
+Onko aiheen opiskelu kesken: false
+Milloin aihe on luotu: 2020-01-22
 Milloin aihe on opiskeltu: null
 

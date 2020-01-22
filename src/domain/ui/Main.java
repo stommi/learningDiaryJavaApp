@@ -1,5 +1,6 @@
 package domain.ui;
 
+import domain.Aihelista;
 import domain.Kirjoituskone;
 import domain.Lista;
 import domain.Topic;
@@ -10,6 +11,7 @@ public class Main {
     Scanner lukija = new Scanner(System.in);
     Kirjoituskone kirjoituskone = new Kirjoituskone();
     Lista kaikkiAiheet = new Lista();
+    Aihelista aiheet = new Aihelista();
 
     private static final String menuteksti = "\n Anna vaihtoehto:\n"
             + "1 Lisää uusi aihe\n"
@@ -24,7 +26,8 @@ public class Main {
             if ("1".equals(vastaus)) {
                 lisaaAihe(lukija);
             } else if ("2".equals(vastaus)) {
-                kaikkiAiheet.tulostaAiheet();
+                aiheet.luoOliot();
+                aiheet.tulostaKaikkiAiheet();
             } else if ("3".equals(vastaus)) {
                 break;
             } else {

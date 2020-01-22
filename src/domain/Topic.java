@@ -18,6 +18,16 @@ public class Topic {
         this.creationDate = LocalDate.now();
     }
 
+    public Topic(String title, UUID id, String description, String additionalSource, boolean complete, LocalDate creationDate, LocalDate completionDate) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.additionalSource = additionalSource;
+        this.complete = complete;
+        this.creationDate = creationDate;
+        this.completionDate = completionDate;
+    }
+
     public void setDescription(String description) {
         this.description = description;
     }
