@@ -16,23 +16,25 @@ public class Main {
     private static final String menuteksti = "\n Anna vaihtoehto:\n"
             + "1 Lisää uusi aihe\n"
             + "2 Tulosta aiheet\n"
-            + "3 Hae yksittainen aihe\n"
-            + "4 Lopeta";
+            + "3 Tarkastele yksittaista aihetta\n"
+            + "4 Hae aihetta otsikolla\n"
+            + "5 Lopeta";
 
     public void run() {
         Scanner lukija = new Scanner(System.in);
+        aiheet.luoOliot();
         for (; ; ) {
             System.out.println(menuteksti);
             String vastaus = lukija.nextLine().trim();
             if ("1".equals(vastaus)) {
                 lisaaAihe(lukija);
             } else if ("2".equals(vastaus)) {
-                aiheet.luoOliot();
                 aiheet.tulostaKaikkiAiheet();
             } else if ("3".equals(vastaus)) {
-                aiheet.luoOliot();
                 haeYksittainenAihe(lukija);
-            }else if ("4".equals(vastaus)) {
+            } else if ("4".equals(vastaus)) {
+                aiheet.haeOtsikolla(lukija);
+            } else if ("5".equals(vastaus)) {
                 break;
             } else {
                 System.err.println(String.format("Tuntematon vaihtoehto: '%s'", vastaus));

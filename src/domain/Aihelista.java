@@ -25,6 +25,27 @@ public class Aihelista {
         }
     }
 
+    public void haeOtsikolla(Scanner lukija) {
+        System.out.print("Anna etsittävän aiheen otsikko: ");
+        String otsikko = lukija.nextLine();
+        int i = 0;
+
+        for (Topic aihe : this.aiheet) {
+            String etsittava = aihe.getTitle();
+            if (otsikko.equals(etsittava)) {
+                System.out.println("Löytyi!\n");
+                System.out.println(aihe);
+                i++;
+                break;
+            }
+        }
+
+        if (i==0) {
+            System.out.println("Aihetta ei löytynyt.");
+        }
+
+    }
+
     public void tulostaKaikkiAiheet() {
         for (Topic aihe : aiheet) {
             System.out.println(aihe);
