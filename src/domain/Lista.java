@@ -1,10 +1,8 @@
 package domain;
 
 import java.io.File;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.UUID;
 
 public class Lista {
     private ArrayList<String> aiheet;

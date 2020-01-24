@@ -74,7 +74,7 @@ public class Main {
     private void haeYksittainenAihe(Scanner lukija) {
         System.out.println("Alla on kaikkien aiheiden otsitkot, anna indeksi tarkastellaksesi aihetta: ");
         aiheet.tulostaAiheet();
-        int indeksi = Integer.valueOf(lukija.nextLine());
+        int indeksi = Integer.parseInt(lukija.nextLine());
         System.out.println(aiheet.getTopic(indeksi));
 
     }

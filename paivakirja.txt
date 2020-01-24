@@ -1,11 +1,3 @@
-Id: 358c7b67-d016-4d75-ae37-28de53b4f6a1
-Otsikko: Testiaihe
-Kuvaus: perusteet
-Mahdollinen lähde: google
-Onko aiheen opiskelu kesken: true
-Milloin aihe on luotu: 2020-01-16
-Milloin aihe on opiskeltu: null
-
 Id: cbfc05be-575f-41ab-84cc-b251038e9a56
 Otsikko: Keksitty aihe
 Kuvaus: jatkokurssi
@@ -54,11 +46,11 @@ Onko aiheen opiskelu kesken: false
 Milloin aihe on luotu: 2020-01-22
 Milloin aihe on opiskeltu: null
 
-Id: 8a156490-bc47-4fe1-8235-eae526dd430d
-Otsikko: Keksitty aihe
-Kuvaus: Keksintö
+Id: e9d29bbc-3a6f-4323-b3e9-0578a8dcf08d
+Otsikko: Java testaus
+Kuvaus: Testausta
 Mahdollinen lähde: url
-Onko aiheen opiskelu kesken: true
+Onko aiheen opiskelu kesken: false
 Milloin aihe on luotu: 2020-01-24
 Milloin aihe on opiskeltu: null
 
