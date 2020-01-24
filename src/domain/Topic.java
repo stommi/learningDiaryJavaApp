@@ -1,11 +1,10 @@
 package domain;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 public class Topic {
-    public static int seuraavaId;
-    private final int id;
-
+    private UUID id;
     private String title;
     private String description;
     private String additionalSource;
@@ -15,8 +14,18 @@ public class Topic {
 
     public Topic(String title) {
         this.title = title;
-        this.id = seuraavaId++;
+        this.id = UUID.randomUUID();
         this.creationDate = LocalDate.now();
+    }
+
+    public Topic(String title, UUID id, String description, String additionalSource, boolean complete, LocalDate creationDate, LocalDate completionDate) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.additionalSource = additionalSource;
+        this.complete = complete;
+        this.creationDate = creationDate;
+        this.completionDate = completionDate;
     }
 
     public void setDescription(String description) {
@@ -31,11 +40,15 @@ public class Topic {
         this.complete = complete;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public void setCompletionDate(LocalDate completionDate) {
         this.completionDate = completionDate;
     }
 
-    public int getId() {
+    public UUID getId() {
         return id;
     }
 
@@ -66,7 +79,8 @@ public class Topic {
     @Override
     public String toString() {
         return "Id: " + id +
-                "\nOtsikko: " + this.title + "\nKuvaus: " + this.description +
+                "\nOtsikko: " + this.title +
+                "\nKuvaus: " + this.description +
                 "\nMahdollinen lähde: " + this.additionalSource +
                 "\nOnko aiheen opiskelu kesken: " + this.complete +
                 "\nMilloin aihe on luotu: " + this.creationDate +
