@@ -54,19 +54,11 @@ Onko aiheen opiskelu kesken: false
 Milloin aihe on luotu: 2020-01-22
 Milloin aihe on opiskeltu: null
 
-Id: 0e898637-240a-4257-bbd4-2f82050f4ff5
-Otsikko: Testiaihe4
-Kuvaus: testausta
-Mahdollinen lähde: kirja
+Id: 8a156490-bc47-4fe1-8235-eae526dd430d
+Otsikko: Keksitty aihe
+Kuvaus: Keksintö
+Mahdollinen lähde: url
 Onko aiheen opiskelu kesken: true
-Milloin aihe on luotu: 2020-01-22
-Milloin aihe on opiskeltu: null
-
-Id: 5821dd02-f844-4a57-a8fc-c888c6d066c5
-Otsikko: testi
-Kuvaus: testaa
-Mahdollinen lähde: testi
-Onko aiheen opiskelu kesken: true
-Milloin aihe on luotu: 2020-01-23
+Milloin aihe on luotu: 2020-01-24
 Milloin aihe on opiskeltu: null
 

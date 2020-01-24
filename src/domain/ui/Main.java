@@ -18,7 +18,8 @@ public class Main {
             + "2 Tulosta aiheet\n"
             + "3 Tarkastele yksittaista aihetta\n"
             + "4 Hae aihetta otsikolla\n"
-            + "5 Lopeta";
+            + "5 Poista aihe\n"
+            + "6 Lopeta";
 
     public void run() {
         Scanner lukija = new Scanner(System.in);
@@ -35,6 +36,8 @@ public class Main {
             } else if ("4".equals(vastaus)) {
                 aiheet.haeOtsikolla(lukija);
             } else if ("5".equals(vastaus)) {
+                aiheet.poistaAihe(lukija);
+            } else if ("6".equals(vastaus)) {
                 break;
             } else {
                 System.err.println(String.format("Tuntematon vaihtoehto: '%s'", vastaus));

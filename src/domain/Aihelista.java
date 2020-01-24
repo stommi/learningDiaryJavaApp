@@ -11,10 +11,12 @@ import java.util.UUID;
 public class Aihelista {
     private ArrayList<Topic> aiheet;
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    private Kirjoituskone kirjoituskone;
 
 
     public Aihelista() {
         this.aiheet = new ArrayList<>();
+        this.kirjoituskone = new Kirjoituskone();
     }
 
     public void tulostaAiheet() {
@@ -50,6 +52,20 @@ public class Aihelista {
         for (Topic aihe : aiheet) {
             System.out.println(aihe);
         }
+    }
+
+    public void poistaAihe(Scanner lukija) {
+        int i = 0;
+        for (Topic aihe : aiheet) {
+            System.out.println(aihe.getTitle() + " (" + i + ")");
+            i++;
+        }
+
+        int indeksi = Integer.parseInt(lukija.nextLine());
+        aiheet.remove(indeksi);
+
+        kirjoituskone.poistaja(aiheet);
+
     }
 
     public Topic getTopic(int indeksi) {
