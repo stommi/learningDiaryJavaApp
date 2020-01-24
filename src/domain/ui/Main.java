@@ -19,7 +19,8 @@ public class Main {
             + "3 Tarkastele yksittaista aihetta\n"
             + "4 Hae aihetta otsikolla\n"
             + "5 Poista aihe\n"
-            + "6 Lopeta";
+            + "6 Muokkaa aihetta\n"
+            + "7 Lopeta";
 
     public void run() {
         Scanner lukija = new Scanner(System.in);
@@ -38,6 +39,8 @@ public class Main {
             } else if ("5".equals(vastaus)) {
                 aiheet.poistaAihe(lukija);
             } else if ("6".equals(vastaus)) {
+                aiheet.muokkaaAihetta(lukija);
+            } else if ("7".equals(vastaus)) {
                 break;
             } else {
                 System.err.println(String.format("Tuntematon vaihtoehto: '%s'", vastaus));
@@ -69,6 +72,7 @@ public class Main {
         t1.setComplete(tila);
 
         kirjoituskone.kirjoita(t1);
+        aiheet.lisaaAihe(t1);
     }
 
     private void haeYksittainenAihe(Scanner lukija) {

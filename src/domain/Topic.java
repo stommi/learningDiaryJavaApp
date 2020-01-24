@@ -40,6 +40,10 @@ public class Topic {
         this.complete = complete;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public void setCompletionDate(LocalDate completionDate) {
         this.completionDate = completionDate;
     }
