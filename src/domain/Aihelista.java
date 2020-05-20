@@ -34,7 +34,7 @@ public class Aihelista {
 
         for (Topic aihe : this.aiheet) {
             String etsittava = aihe.getTitle();
-            if (otsikko.equals(etsittava)) {
+            if (otsikko.equalsIgnoreCase(etsittava)) {
                 System.out.println("Löytyi!\n");
                 System.out.println(aihe);
                 i++;
@@ -67,6 +67,36 @@ public class Aihelista {
         kirjoituskone.poistaja(aiheet);
 
     }
+
+    public void haeYksittainenAihe(Scanner lukija) {
+        System.out.println("Alla on kaikkien aiheiden otsitkot, anna indeksi tarkastellaksesi aihetta: ");
+        tulostaAiheet();
+        int indeksi = Integer.parseInt(lukija.nextLine());
+        System.out.println(getTopic(indeksi));
+    }
+
+    public void lisaaAiheenTiedot(Scanner lukija) {
+        System.out.print("Syötä opiskellun aiheen otsikko: ");
+        String aihe = lukija.nextLine();
+
+        Topic t1 = new Topic(aihe);
+
+        System.out.print("Syötä kuvaus: ");
+        String kuvaus = lukija.nextLine();
+        t1.setDescription(kuvaus);
+
+        System.out.print("Syötä mahdollinen lähde esim. web url tai kirja: ");
+        String lahde = lukija.nextLine();
+        t1.setAdditionalSource(lahde);
+
+        System.out.print("Onko aiheen opiskelu kesken, syötä true tai false: ");
+        boolean tila = Boolean.parseBoolean(lukija.nextLine());
+        t1.setComplete(tila);
+
+        kirjoituskone.kirjoita(t1);
+        lisaaAihe(t1);
+    }
+
 
     public void muokkaaAihetta(Scanner lukija) {
         int i = 0;
