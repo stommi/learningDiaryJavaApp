@@ -1,29 +1,13 @@
-Id: cbfc05be-575f-41ab-84cc-b251038e9a56
-Otsikko: Muokkauksen perusteet
-Kuvaus: Moro
-Mahdollinen lähde: kirja
-Onko aiheen opiskelu kesken: true
-Milloin aihe on luotu: 2020-01-16
-Milloin aihe on opiskeltu: 2019-12-20
-
-Id: 226ce0b5-5a06-4f13-861f-5a411f2a3e5f
-Otsikko: JavaTestaus
-Kuvaus: Jatkokurssi
-Mahdollinen lähde: book
-Onko aiheen opiskelu kesken: true
-Milloin aihe on luotu: 2020-01-16
-Milloin aihe on opiskeltu: 2020-01-16
-
 Id: 86ceb77f-8a0f-43a3-9b70-92a5327c9a2a
-Otsikko: String
-Kuvaus: Metodit
-Mahdollinen lähde: pdf
+Otsikko: React
+Kuvaus: Front web development
+Mahdollinen lähde: web
 Onko aiheen opiskelu kesken: true
 Milloin aihe on luotu: 2020-01-19
 Milloin aihe on opiskeltu: 2020-01-16
 
 Id: a466eff5-afa6-483c-8496-f5f2477408e6
-Otsikko: Testi
+Otsikko: Muokkauksen jatkokurssi
 Kuvaus: testausta
 Mahdollinen lähde: wiki
 Onko aiheen opiskelu kesken: false
@@ -45,14 +29,6 @@ Mahdollinen lähde: kirja
 Onko aiheen opiskelu kesken: false
 Milloin aihe on luotu: 2020-01-22
 Milloin aihe on opiskeltu: 2020-01-24
-
-Id: e9d29bbc-3a6f-4323-b3e9-0578a8dcf08d
-Otsikko: Java testaus
-Kuvaus: Testausta
-Mahdollinen lähde: url
-Onko aiheen opiskelu kesken: false
-Milloin aihe on luotu: 2020-01-24
-Milloin aihe on opiskeltu: null
 
 Id: d8d819cb-44e0-41d1-b06c-7b117dca8f2c
 Otsikko: Testiaihe Toiminto
