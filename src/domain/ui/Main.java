@@ -3,7 +3,6 @@ package domain.ui;
 import domain.Aihelista;
 import domain.Kirjoituskone;
 import domain.Lista;
-
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +21,6 @@ public class Main {
             + "7 Lopeta";
 
     public void run() {
-        Scanner lukija = new Scanner(System.in);
         aiheet.luoOliot();
         for (; ; ) {
             System.out.println(menuteksti);
@@ -50,6 +48,5 @@ public class Main {
     public static void main(String[] args) {
         new Main().run();
     }
-
 }
 
