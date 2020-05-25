@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class Kirjoituskone {
 
     public Kirjoituskone() {
-
     }
 
     public void kirjoita(Topic teksti) {
@@ -35,6 +34,5 @@ public class Kirjoituskone {
         } catch (Exception e) {
             System.err.println("Tapahtui virhe " + e.getMessage());
         }
-
     }
 }

@@ -13,7 +13,6 @@ public class Aihelista {
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private Kirjoituskone kirjoituskone;
 
-
     public Aihelista() {
         this.aiheet = new ArrayList<>();
         this.kirjoituskone = new Kirjoituskone();
@@ -45,7 +44,6 @@ public class Aihelista {
         if (i==0) {
             System.out.println("Aihetta ei löytynyt.");
         }
-
     }
 
     public void tulostaKaikkiAiheet() {
@@ -65,7 +63,6 @@ public class Aihelista {
         aiheet.remove(indeksi);
 
         kirjoituskone.poistaja(aiheet);
-
     }
 
     public void haeYksittainenAihe(Scanner lukija) {
@@ -152,9 +149,6 @@ public class Aihelista {
         }  else {
             System.err.println(String.format("Tuntematon vaihtoehto: '%s'", valinta));
         }
-
-
-
     }
 
     public Topic getTopic(int indeksi) {
